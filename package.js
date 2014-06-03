@@ -16,9 +16,9 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use('tinytest');
+  api.use(['tinytest', 'munit']);
   api.use('session', 'client');
   api.use('deps');
   api.use('mongo-livedata');
-  api.add_files('session_tests.js', 'client');
+  api.add_files('session_munit_tests.js', 'client');
 });
