@@ -1,8 +1,8 @@
 Overview
 ==========================
-A simple example of writing munit tests for a meteor package. This example shows you how to write the same tests for the
+A simple meteor package with munit tests. This example package shows you how to write the same tests for the
 meteor session package as munit tests, instead of tinytests. This package does not include the Session source code, it
-just depends on the session package.
+just depends on the session package, so this package doesn't really have any source code, just munit tests.
 
 
 Running the tests
@@ -17,6 +17,7 @@ mrt install
 export PACKAGE_DIRS=`pwd`/packages
 meteor test-packages ./
 ```
+And open your browser on your ROOT_URL to run the tests.
 
 Resources
 =========
