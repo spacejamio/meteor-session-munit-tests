@@ -1,5 +1,5 @@
 {
   "packages": {
-    "munit": {}
+    "munit": "0.1.5"
   }
 }

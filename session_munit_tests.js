@@ -1,4 +1,4 @@
-var SessionTesSuite = {
+var SessionTestSuite = {
 
   name: "session",
 
@@ -202,8 +202,31 @@ var SessionTesSuite = {
         test.equal(yEqualsExecutions, 3);
       }
     }
+    ,
+
+    {
+      name: "Async client test example with timeout",
+      timeout: 1000,
+      type: "client",
+      func: function(test, done){
+        var self = this;
+
+        Session.set('asyncVar', 'oldValue');
+        console.log("old Session value = "+Session.get('asyncVar'));
+
+         Meteor.setTimeout(done(function()
+        {
+
+          console.log("changing Session value = "+Session.get('asyncVar'));
+          Session.set('asyncVar', 'newValue');
+        }), 100);
+
+      }
+    }
+
+
   ]
 
 };
 
-Munit.run( SessionTesSuite )
+Munit.run( SessionTestSuite )
