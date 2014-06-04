@@ -21,6 +21,6 @@ meteor test-packages ./
 Resources
 =========
 
-[munit package](https://atmospherejs.com/package/munit)
-[session meteor package source](https://github.com/meteor/meteor/tree/devel/packages/session)
-[session_munit_tests.js](https://github.com/spacejamio/meteor-session-munit-tests/blob/master/session_munit_tests.js)
+* [munit package](https://atmospherejs.com/package/munit)
+* [session meteor package source](https://github.com/meteor/meteor/tree/devel/packages/session)
+* [session_munit_tests.js](https://github.com/spacejamio/meteor-session-munit-tests/blob/master/session_munit_tests.js)
